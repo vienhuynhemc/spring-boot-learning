@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  // Websocket config
+  CHAT_URL: 'ws://localhost:8080/chat'
 };
 
 /*
