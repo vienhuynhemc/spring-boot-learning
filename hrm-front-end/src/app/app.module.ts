@@ -14,11 +14,19 @@ export function playerFactory() {
 import { HttpClientModule } from '@angular/common/http';
 // tooltip
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import {NoopAnimationsModule} from '@angular/platform-browser/animations';
+import { NotFoundPageComponent } from './view/not-found-page/not-found-page.component';
+import { MainPageComponent } from './view/main-page/main-page.component';
+import { DepartmentPageComponent } from './view/main-page/department-page/department-page.component';
+import { EmployeePageComponent } from './view/main-page/employee-page/employee-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NotFoundPageComponent,
+    MainPageComponent,
+    DepartmentPageComponent,
+    EmployeePageComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +37,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     LottieModule.forRoot({ player: playerFactory }),
     // tooltip
     MatTooltipModule,
-    NoopAnimationsModule,
+    NoopAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
